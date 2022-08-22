@@ -5,105 +5,182 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Choose Top five Players</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="style.css" />
     <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      #heading {
+        font-family: "Berkshire Swash", cursive;
+      }
+      #choosen-list li {
+        margin: 15px auto;
+      }
+    </style>
   </head>
-  <body class="w-9/12 mx-auto bg-[#2b2929]">
+  <body class="max-w-[1100px] mx-auto bg-[#2b2929]">
     <header
       class="flex justify-between content-center bg-black mx-auto pt-12 mb-12"
     >
       <div><img src="images/header-left.png" alt="" /></div>
       <div class="text-center w-2/3 my-auto">
-        <h1 class="text-7xl text-white mb-7 text-[#FF5E19] font-bold">
-          Select Your Best Five
+        <h1 id="heading" class="text-5xl mb-7 text-[#FF5E19] font-bold">
+          Choose Your Favorite Five
         </h1>
         <p class="text-white text-lg">
-          Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
-          sint. Velit officia consequat duis enim velit mollit. Exercitation
-          veniam consequat sunt nostrud amet.
+          Here you have to choose 5 players on your choice and make a tiny team
+          by them . You can provide their expence using our website .
         </p>
       </div>
       <div><img src="images/header-right.png" alt="" /></div>
     </header>
-    <main class="w-10/12 mx-auto flex justify-between">
-      <section class="w-9/12 grid grid-cols-3 gap-7">
+    <main class="w-full mb-16 px-7 mx-auto flex justify-between">
+      <section class="w-9/12 grid grid-cols-3 h-[850px] gap-x-7">
         <!-- left section starts -->
         <div
-          class="card w-[fit-content] text-center rounded-md bg-black border-2 border-[#434141]"
+          class="card w-[fit-content] h-[350px] text-center rounded-md bg-black border-2 border-[#434141]"
         >
           <img class="w-[250px] rounded-sm" src="images/player1.png" alt="" />
           <h2 class="text-white text-2xl my-3 font-semibold">Lionel Messi</h2>
           <p class="text-[#626262] text-md">Click select button to Choose</p>
           <button
-            class="text-white btn-select rounded-md text-xl bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] py-1 my-5"
+            class="text-white btn-select bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] text-md py-2 my-5"
           >
             SELECT
           </button>
         </div>
         <div
-          class="card w-[fit-content] text-center rounded-md bg-black border-2 border-[#434141]"
+          class="card w-[fit-content] h-[350px] text-center rounded-md bg-black border-2 border-[#434141]"
         >
           <img class="w-[250px] rounded-sm" src="images/player2.png" alt="" />
           <h2 class="text-white text-2xl my-3 font-semibold">Neymar Jr</h2>
           <p class="text-[#626262] text-md">Click select button to Choose</p>
           <button
-            class="text-white btn-select rounded-md text-xl bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] py-1 my-5"
+            class="text-white btn-select bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] text-md py-2 my-5"
           >
             SELECT
           </button>
         </div>
         <div
-          class="card w-[fit-content] text-center rounded-md bg-black border-2 border-[#434141]"
+          class="card w-[fit-content] h-[350px] text-center rounded-md bg-black border-2 border-[#434141]"
         >
           <img class="w-[250px] rounded-sm" src="images/player3.png" alt="" />
           <h2 class="text-white text-2xl my-3 font-semibold">Kylian Mbappé</h2>
           <p class="text-[#626262] text-md">Click select button to Choose</p>
           <button
-            class="text-white btn-select rounded-md text-xl bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] py-1 my-5"
+            class="text-white btn-select bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] text-md py-2 my-5"
           >
             SELECT
           </button>
         </div>
         <div
-          class="card w-[fit-content] text-center rounded-md bg-black border-2 border-[#434141]"
+          class="card w-[fit-content] h-[350px] text-center rounded-md bg-black border-2 border-[#434141]"
         >
           <img class="w-[250px] rounded-sm" src="images/player4.png" alt="" />
           <h2 class="text-white text-2xl my-3 font-semibold">Vítor Machado</h2>
           <p class="text-[#626262] text-md">Click select button to Choose</p>
           <button
-            class="text-white btn-select rounded-md text-xl bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] py-1 my-5"
+            class="text-white btn-select bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] text-md py-2 my-5"
           >
             SELECT
           </button>
         </div>
         <div
-          class="card w-[fit-content] text-center rounded-md bg-black border-2 border-[#434141]"
+          class="card w-[fit-content] h-[350px] text-center rounded-md bg-black border-2 border-[#434141]"
         >
           <img class="w-[250px] rounded-sm" src="images/player5.png" alt="" />
           <h2 class="text-white text-2xl my-3 font-semibold">Sergio Ramos</h2>
           <p class="text-[#626262] text-md">Click select button to Choose</p>
           <button
-            class="text-white btn-select rounded-md text-xl bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] py-1 my-5"
+            class="text-white btn-select bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] text-md py-2 my-5"
           >
             SELECT
           </button>
         </div>
         <div
-          class="card w-[fit-content] text-center rounded-md bg-black border-2 border-[#434141]"
+          class="card w-[fit-content] h-[350px] text-center rounded-md bg-black border-2 border-[#434141]"
         >
           <img class="w-[250px] rounded-sm" src="images/player6.png" alt="" />
           <h2 class="text-white text-2xl my-3 font-semibold">Renato Sanches</h2>
           <p class="text-[#626262] text-md">Click select button to Choose</p>
           <button
-            class="text-white btn-select rounded-md text-xl bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] py-1 my-5"
+            class="text-white btn-select bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] text-md py-2 my-5"
           >
             SELECT
           </button>
         </div>
       </section>
       <!-- left section ends -->
-      <section class="w-3/12">
+      <section class="grid ml-7 grid-cols-1 gap-7 w-3/12">
         <!-- right section starts -->
+        <div
+          class="card w-full h-[350px] rounded-md bg-black border-2 border-[#434141]"
+        >
+          <h3 class="text-white text-center text-3xl font-bold my-5">
+            Choosen-V
+          </h3>
+          <ul
+            class="mx-12 mb-5 list-[upper-roman] text-xl text-[#A2A9AF] inline-block"
+            id="choosen-list"
+          ></ul>
+        </div>
+        <div
+          class="card w-full h-[fit-content] text-center rounded-md bg-black border-2 border-[#434141]"
+        >
+          <h3 class="text-white text-center text-3xl font-bold my-5">Budget</h3>
+          <div class="flex mx-2 justify-around content-center">
+            <p class="text-lg mt-3 text-[#cbc6c6]">Per Player</p>
+            <input
+              id="per-player"
+              class="w-[100px] bg-black text-white border-grey border my-2 py-2 justify-self-end inline-block"
+              type="text"
+            />
+          </div>
+          <button
+            class="text-white btn-calculate text-lg py-2 bg-blue-800 hover:bg-blue-700 px-[65px] my-5"
+          >
+            Calculate
+          </button>
+          <div class="flex text-lg my-3 px-5 justify-around">
+            <p class="inline text-[#A2A9AF] font-bold text-start">
+              Player Expenses
+            </p>
+            <p class="inline text-right text-[#A2A9AF]">
+              $<span id="Player-Expenses" class="text-[#FF5E19]">00</span>
+            </p>
+          </div>
+          <div class="flex mx-2 mb-3 justify-around content-center">
+            <p class="text-lg mt-3 text-[#cbc6c6]">Manager</p>
+            <input
+              id="manager"
+              class="w-[100px] bg-black text-white border-grey border py-2 my-2 justify-self-end inline-block"
+              type="text"
+            />
+          </div>
+          <div class="flex mx-2 justify-around content-center">
+            <p class="text-lg mt-3 text-[#cbc6c6]">Coach</p>
+            <input
+              id="coach"
+              class="w-[100px] bg-black text-white border-grey border my-2 py-2 justify-self-end inline-block"
+              type="text"
+            />
+          </div>
+          <button
+            class="text-white btn-calculate text-lg py-2 bg-blue-800 hover:bg-blue-700 px-[45px] my-5"
+          >
+            Calculate Total
+          </button>
+          <div class="flex text-lg my-3 px-5 justify-between">
+            <p class="inline text-[#A2A9AF] font-bold text-start">Total</p>
+            <p class="inline text-right text-[#A2A9AF]">
+              $<span id="total" class="text-[#FF5E19]">00</span>
+            </p>
+          </div>
+        </div>
       </section>
       <!-- right section ends -->
     </main>
