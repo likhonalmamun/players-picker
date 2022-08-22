@@ -45,3 +45,4 @@ document
       document.getElementById("total").innerText = totalExpence;
     }
   });
+  // total expence calculation done 
