@@ -45,9 +45,12 @@
           class="card w-[fit-content] h-[350px] text-center rounded-md bg-black border-2 border-[#434141]"
         >
           <img class="w-[250px] rounded-sm" src="images/player1.png" alt="" />
-          <h2 class="text-white text-2xl my-3 font-semibold">Lionel Messi</h2>
+          <h2 id="player1" class="text-white text-2xl my-3 font-semibold">
+            Lionel Messi
+          </h2>
           <p class="text-[#626262] text-md">Click select button to Choose</p>
           <button
+            id="btn1"
             class="text-white btn-select bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[65px] text-md py-2 my-5"
           >
             SELECT
@@ -136,11 +139,12 @@
             <p class="text-lg mt-3 text-[#cbc6c6]">Per Player</p>
             <input
               id="per-player"
-              class="w-[100px] bg-black text-white border-grey border my-2 py-2 justify-self-end inline-block"
+              class="w-[100px] focus:outline-none focus:border-sky-600 focus:ring-2 focus:rounded-sm focus:ring-sky-500 bg-black text-white border-grey border my-2 py-2 justify-self-end inline-block"
               type="text"
             />
           </div>
           <button
+            id="calculate"
             class="text-white btn-calculate text-lg py-2 bg-blue-800 hover:bg-blue-700 px-[65px] my-5"
           >
             Calculate
@@ -150,14 +154,14 @@
               Player Expenses
             </p>
             <p class="inline text-right text-[#A2A9AF]">
-              $<span id="Player-Expenses" class="text-[#FF5E19]">00</span>
+              $<span id="player-expenses" class="text-[#FF5E19]">00</span>
             </p>
           </div>
           <div class="flex mx-2 mb-3 justify-around content-center">
             <p class="text-lg mt-3 text-[#cbc6c6]">Manager</p>
             <input
               id="manager"
-              class="w-[100px] bg-black text-white border-grey border py-2 my-2 justify-self-end inline-block"
+              class="w-[100px] focus:outline-none focus:border-sky-600 focus:ring-2 focus:rounded-sm focus:ring-sky-500 bg-black text-white border-grey border py-2 my-2 justify-self-end inline-block"
               type="text"
             />
           </div>
@@ -165,12 +169,13 @@
             <p class="text-lg mt-3 text-[#cbc6c6]">Coach</p>
             <input
               id="coach"
-              class="w-[100px] bg-black text-white border-grey border my-2 py-2 justify-self-end inline-block"
+              class="w-[100px] focus:outline-none focus:border-sky-600 focus:ring-2 focus:rounded-sm focus:ring-sky-500 bg-black text-white border-grey border my-2 py-2 justify-self-end inline-block"
               type="text"
             />
           </div>
           <button
-            class="text-white btn-calculate text-lg py-2 bg-blue-800 hover:bg-blue-700 px-[45px] my-5"
+            id="calculate-total"
+            class="text-white btn-calculate text-lg py-2 bg-blue-800 hover:bg-blue-700 disabled:bg-[#333333] px-[45px] my-5"
           >
             Calculate Total
           </button>
